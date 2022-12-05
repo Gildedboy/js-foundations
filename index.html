@@ -10,18 +10,24 @@
       <div class="box">Hola mundo</div>
     </div>
     <script>
-      //My javascript code goes here!
-      let a = 10;
-      console.log(23 + 97); //answer should be 120
-      console.log(1 + 2 + 3 + 4 + 5 + 6); //answer should be 21
-      console.log((4 + 6 + 9) / 77); //answer should be 0.24675
-      console.log(a); //answer should be 10
-      console.log(9 * a); //answer should be 90
-      let b = 7 * a;
-      console.log(b); //anwser should be 70
-      let max = 57; //anwser should be 57
-      let actual = max - 13; //answer should be 44
-      let percentage = actual / max; //answer should be 0.7719
+      let add7 = (number) => number + 7; //This is an arrow function who sums a number + 7
+      console.log(add7(10));
+
+      let multiply = (number1, number2) => number1 * number2; //This is an arrow function who recieves 2 number parameters and return their product
+      console.log(multiply(10, 10));
+
+      function capitalize(string) {
+        let newString = string.toLowerCase();
+        let capitalizedString = newString[0].toUpperCase() + newString.slice(1);
+        return capitalizedString;
+      }
+      console.log(capitalize("HELLO WORLD"));
+
+      function lastLetter(string) {
+        let lastCharacter = string[string.length - 1];
+        return lastCharacter;
+      }
+      console.log(lastLetter("hola mundo"));
     </script>
   </body>
 </html>
